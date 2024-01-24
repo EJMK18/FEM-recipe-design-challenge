@@ -41,7 +41,7 @@ html {
 }
 
 body {
-	max-width: 144rem;
+	max-width: 100vw;
 	background: var(--neutral-colour-eggshell);
 	color: var(--neutral-colour-wenge-brown);
 }
