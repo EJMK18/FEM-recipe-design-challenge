@@ -1,0 +1,148 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+	font-family: "Outfit", sans-serif;
+	font-family: "Young Serif", serif;
+}
+
+:root {
+	/* COLOURS */
+	--main-primary-colour: hsl(14, 45%, 36%);
+	--sec-primary-colour: 332, 51%, 32%;
+	--neutral-colour-white: hsl(0, 0%, 100%);
+	--neutral-colour-rose-white: hsl(330, 100%, 98%);
+	--neutral-colour-eggshell: hsl(30, 54%, 90%);
+	--neutral-colour-light-grey: hsl(30, 18%, 87%);
+	--neutral-colour-wenge-brown: hsl(30, 10%, 34%);
+	--neutral-colour-dark-charcoal: hsl(24, 5%, 18%);
+
+	/* FONT SIZES */
+	--fs-body-copy: 1.8rem;
+	--fs-h1: 4.8rem;
+	--fs-h2: 3.2rem;
+	--fs-h3: 2.2rem;
+
+	/* FONT FAMILY */
+	--ff-headings: "Young Serif", serif;
+	--ff-p: "Outfit", sans-serif;
+
+	/* SECTION SPACING */
+	--section-spacing: 4rem;
+	--spacing: 2.4rem;
+	--list-item-spacing: 1.6rem;
+
+	/* LETTER SPACING */
+	--letter-spacing-h2: 0.2rem;
+}
+
+body {
+	max-width: 144rem;
+	background: var(--neutral-colour-eggshell);
+	color: var(--neutral-colour-wenge-brown);
+}
+
+article {
+	padding: 4rem;
+	background: var(--neutral-colour-white);
+	margin: 6.4rem auto;
+	width: 85rem;
+	border-radius: 2rem;
+}
+
+h1,
+h2,
+h3 {
+	font-family: var(--ff-headings);
+	color: var(--main-primary-colour);
+	font-weight: 400;
+}
+
+h1 {
+	font-size: var(--fs-h1);
+	color: var(--neutral-colour-wenge-brown);
+}
+
+h2 {
+	font-size: var(--fs-h2);
+}
+
+h3 {
+	font-size: var(--fs-h3);
+	font-family: var(--ff-p);
+	font-weight: bold;
+}
+
+li {
+	margin-left: 3rem;
+	margin-bottom: var(--spacing);
+	padding-left: 2rem;
+}
+
+p,
+li {
+	font-size: var(--fs-body-copy);
+	font-family: var(--ff-p);
+}
+
+li::marker {
+	color: var(--main-primary-colour);
+	font-weight: bold;
+}
+
+/* LAYOUT SETTINGS */
+
+.grid--1-col {
+	display: grid;
+	gap: 2.8rem;
+	grid-template-columns: 1fr;
+	margin-bottom: 6.4rem;
+}
+
+.line {
+	background: var(--neutral-colour-light-grey);
+	height: 0.1rem;
+}
+
+.table-flex-layout {
+	display: flex;
+	align-items: center;
+	/* gap: 2rem; */
+}
+
+/* CONTENT STYLING */
+
+.recipe-img {
+	width: 100%;
+	border-radius: 2rem;
+}
+
+/* PREPARATION SECTION */
+.preparation-section {
+	background: hsla(var(--sec-primary-colour), 0.05);
+	border-radius: 2rem;
+	padding: 3rem;
+}
+
+.prep-heading {
+	margin-bottom: var(--spacing);
+	color: hsl(var(--sec-primary-colour));
+}
+
+.prep-list li::marker {
+	color: hsl(var(--sec-primary-colour));
+}
+
+.value {
+	color: var(--main-primary-colour);
+	font-weight: bold;
+}
+
+.table-flex-layout p {
+	width: 50%;
+	margin-left: 2rem;
+}
